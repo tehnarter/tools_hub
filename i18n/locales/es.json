@@ -1,0 +1,28 @@
+{
+  "seo": {
+    "title": "ТОП-5 ",
+    "description": "Порівняння, характеристики "
+  },
+  "og": {
+    "title": "ТОП-5 ",
+    "description": ""
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "ТОП-5 ",
+    "description": "Огляд найкращих  "
+  },
+
+  "toggleTheme": "Змінити тему",
+  "footer": {
+    "rights": "Всі права захищено"
+  },
+  "back": "Назад",
+  "not_found": "Не знайдено",
+
+  "page": {
+    "title": "Топ 5  2025",
+    "next": "Читати далі"
+  }
+
+}
