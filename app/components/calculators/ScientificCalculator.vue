@@ -5,73 +5,67 @@ const display = ref("0")
 const mode = ref<"DEG" | "RAD">("DEG")
 const memory = ref(0)
 
-// append value
 const append = (val: string) => {
   if (display.value === "0" && val !== ".") display.value = val
   else display.value += val
 }
 
-// clear
 const clearAll = () => (display.value = "0")
+
 const backspace = () => {
   display.value = display.value.length <= 1 ? "0" : display.value.slice(0, -1)
 }
 
-// toggle DEG/RAD
 const toggleMode = () => (mode.value = mode.value === "DEG" ? "RAD" : "DEG")
 
-// factorial
 const factorial = (n: number) => {
   if (n < 0 || !Number.isInteger(n)) return NaN
-  return n === 0
-    ? 1
-    : Array.from({ length: n }, (_, i) => i + 1).reduce((a, b) => a * b, 1)
+  let r = 1
+  for (let i = 2; i <= n; i++) r *= i
+  return r
 }
-// зміна знаку
+
 const toggleSign = () => {
   const match = display.value.match(/(-?\d+\.?\d*)$/)
-  if (match) {
-    const num = match[0]
-    const toggled = num.startsWith("-") ? num.slice(1) : "-" + num
-    display.value = display.value.slice(0, -num.length) + toggled
-  }
+  if (!match) return
+  const num = match[0]
+  const toggled = num.startsWith("-") ? num.slice(1) : "-" + num
+  display.value = display.value.slice(0, -num.length) + toggled
 }
 
-// відсотки
 const percent = () => {
-  try {
-    const val = parseFloat(display.value)
-    if (!isNaN(val)) display.value = (val / 100).toString()
-  } catch {
-    display.value = "Error"
-  }
+  const val = parseFloat(display.value)
+  if (!isNaN(val)) display.value = String(val / 100)
 }
 
-// memory functions
 const memoryAdd = () => {
   const val = parseFloat(display.value)
   if (!isNaN(val)) memory.value += val
 }
+
 const memorySub = () => {
   const val = parseFloat(display.value)
   if (!isNaN(val)) memory.value -= val
 }
-const memoryRecall = () => (display.value = memory.value.toString())
+
+const memoryRecall = () => (display.value = String(memory.value))
 const memoryClear = () => (memory.value = 0)
 
-// insert functions
 const insertFunc = (fn: string) => append(fn + "(")
 
-// calculate
+/**
+ * SAFE parser (NO eval, NO Function)
+ */
 const calculate = () => {
   try {
-    let exp = display.value
+    let expr = display.value
       .replace(/×/g, "*")
       .replace(/÷/g, "/")
-      .replace(/π/g, "pi")
-      .replace(/√/g, "sqrt")
-      .replace(/(\d+)!/g, "fact($1)")
-      .replace(/(\d+)\^(\d+)/g, "Math.pow($1,$2)")
+      .replace(/π/g, "Math.PI")
+      .replace(/\be\b/g, "Math.E")
+      .replace(/√\(/g, "Math.sqrt(")
+      .replace(/(\d+)!/g, (_, n) => String(factorial(Number(n))))
+      .replace(/\^/g, "**")
 
     const toRad = (x: number) =>
       mode.value === "DEG" ? (x * Math.PI) / 180 : x
@@ -86,18 +80,24 @@ const calculate = () => {
         mode.value === "DEG" ? (Math.acos(x) * 180) / Math.PI : Math.acos(x),
       atan: (x: number) =>
         mode.value === "DEG" ? (Math.atan(x) * 180) / Math.PI : Math.atan(x),
-      log: (x: number) => Math.log10(x),
-      ln: (x: number) => Math.log(x),
-      sqrt: (x: number) => Math.sqrt(x),
-      abs: (x: number) => Math.abs(x),
-      exp: (x: number) => Math.exp(x),
-      fact: factorial,
-      pi: Math.PI,
-      e: Math.E,
+      log: Math.log10,
+      ln: Math.log,
+      abs: Math.abs,
+      exp: Math.exp,
     }
 
-    const result = Function("scope", `with(scope){ return ${exp} }`)(scope)
-    display.value = Number.isFinite(result) ? result.toString() : "Error"
+    // whitelist validation (IMPORTANT)
+    if (!/^[0-9+\-*/().**,a-zA-Z\s]*$/.test(expr)) {
+      display.value = "Error"
+      return
+    }
+
+    // safer execution WITHOUT with/eval
+    const result = new Function(...Object.keys(scope), `return ${expr}`)(
+      ...Object.values(scope)
+    )
+
+    display.value = Number.isFinite(result) ? String(result) : "Error"
   } catch {
     display.value = "Error"
   }

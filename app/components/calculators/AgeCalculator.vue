@@ -1,19 +1,52 @@
 <script setup lang="ts">
+import { ref, computed } from "vue"
 const { t } = useI18n()
 
 const birthDate = ref<string | null>(null)
-const age = ref<number | null>(null)
+const age = ref<{
+  years: number
+  months: number
+  days: number
+} | null>(null)
 
+// функція розрахунку
 const calculateAge = () => {
   if (!birthDate.value) return
   const birth = new Date(birthDate.value)
   const now = new Date()
+
   let years = now.getFullYear() - birth.getFullYear()
-  const m = now.getMonth() - birth.getMonth()
-  if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) years--
-  age.value = years
+  let months = now.getMonth() - birth.getMonth()
+  let days = now.getDate() - birth.getDate()
+
+  if (days < 0) {
+    months--
+    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0)
+    days += prevMonth.getDate()
+  }
+
+  if (months < 0) {
+    years--
+    months += 12
+  }
+
+  age.value = { years, months, days }
 }
+
+// комп’ютоване поле для формування чистого рядка без нулів
+const ageString = computed(() => {
+  if (!age.value) return ""
+  const parts = []
+  if (age.value.years > 0)
+    parts.push(`${age.value.years} ${t("calculators.age.resultYears")}`)
+  if (age.value.months > 0)
+    parts.push(`${age.value.months} ${t("calculators.age.resultMonths")}`)
+  if (age.value.days > 0)
+    parts.push(`${age.value.days} ${t("calculators.age.resultDays")}`)
+  return parts.join(". ")
+})
 </script>
+
 <template>
   <div class="calculator-card gradient-pink">
     <h2>{{ t("calculators.age.title") }}</h2>
@@ -30,12 +63,12 @@ const calculateAge = () => {
     </button>
 
     <div v-if="age !== null" class="result animate">
-      {{ t("calculators.age.resultPrefix") }}
-      <span>{{ age }}</span>
-      {{ t("calculators.age.resultSuffix") }}
+      {{ t("calculators.age.result") }}
+      <span>{{ ageString }}</span>
     </div>
   </div>
 </template>
+
 <style scoped lang="scss">
 .calculator-card {
   padding: 1.5rem;
@@ -72,6 +105,7 @@ const calculateAge = () => {
     font-weight: 600;
     span {
       color: #ffeb3b;
+      font-size: 1.2rem;
     }
     &.animate {
       animation: pop 0.6s ease;

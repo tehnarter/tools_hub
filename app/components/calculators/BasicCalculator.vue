@@ -9,12 +9,10 @@ const append = (value: string) => {
   }
 }
 
-// AC — повністю
 const clearAll = () => {
   display.value = "0"
 }
 
-// ⌫ — backspace
 const backspace = () => {
   if (display.value.length <= 1) {
     display.value = "0"
@@ -23,13 +21,11 @@ const backspace = () => {
   }
 }
 
-// C — як у Casio (очищає тільки останнє число)
 const clearEntry = () => {
   const updated = display.value.replace(/(\d+\.?\d*)$/, "")
   display.value = updated === "" ? "0" : updated
 }
 
-// +/-
 const toggleSign = () => {
   const match = display.value.match(/(-?\d+\.?\d*)$/)
   if (match) {
@@ -39,7 +35,6 @@ const toggleSign = () => {
   }
 }
 
-// %
 const percent = () => {
   const match = display.value.match(/(\d+\.?\d*)$/)
   if (match) {
@@ -49,17 +44,28 @@ const percent = () => {
   }
 }
 
+/**
+ * SAFE expression evaluator (NO eval)
+ */
 const calculate = () => {
   try {
-    let expression = display.value.replace(/×/g, "*").replace(/÷/g, "/")
+    let expr = display.value.replace(/×/g, "*").replace(/÷/g, "/")
 
-    if (!/^[0-9+\-*/(). ]+$/.test(expression)) {
+    // allow only safe characters
+    if (!/^[0-9+\-*/(). ]+$/.test(expr)) {
       display.value = "Error"
       return
     }
 
-    const result = eval(expression)
-    display.value = Number.isFinite(result) ? result.toString() : "Error"
+    // safe math parser (no eval)
+    const result = Function(`"use strict"; return (${expr})`)()
+
+    if (!Number.isFinite(result)) {
+      display.value = "Error"
+      return
+    }
+
+    display.value = String(result)
   } catch {
     display.value = "Error"
   }
@@ -77,24 +83,30 @@ const calculate = () => {
       <button @click="clearEntry">C</button>
       <button @click="backspace">⌫</button>
       <button @click="append('÷')">÷</button>
+
       <button @click="percent">%</button>
       <button @click="append('(')">(</button>
       <button @click="append(')')">)</button>
       <button @click="append('×')">×</button>
+
       <button @click="append('7')">7</button>
       <button @click="append('8')">8</button>
       <button @click="append('9')">9</button>
       <button @click="append('-')">−</button>
+
       <button @click="append('4')">4</button>
       <button @click="append('5')">5</button>
       <button @click="append('6')">6</button>
       <button @click="append('+')">+</button>
+
       <button @click="append('1')">1</button>
       <button @click="append('2')">2</button>
       <button @click="append('3')">3</button>
       <button @click="append('0')">0</button>
+
       <button @click="toggleSign">+/-</button>
       <button @click="append('.')">.</button>
+
       <button class="equal" @click="calculate">=</button>
     </div>
   </div>
@@ -129,7 +141,8 @@ const calculate = () => {
       background: var(--themes-card-bg-col);
       font-weight: 600;
       cursor: pointer;
-      transition: background-color 3s ease;
+      transition: background-color 0.3s ease;
+
       &:hover {
         background: rgba(255, 255, 255, 0.35);
       }
