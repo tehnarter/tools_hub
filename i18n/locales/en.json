@@ -1,28 +1,289 @@
 {
   "seo": {
-    "title": "ТОП-5 ",
-    "description": "Порівняння, характеристики "
-  },
-  "og": {
-    "title": "ТОП-5 ",
-    "description": ""
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "ТОП-5 ",
-    "description": "Огляд найкращих  "
+    "title": "SmartTools — Online Calculators & Tools",
+    "description": "Free online calculators for finance, health, math, and business. Quick, accurate, and easy-to-use tools for everyday tasks.",
+
+    "about": {
+      "title": "About SmartTools — Online Calculators & Tools",
+      "description": "SmartTools is a platform of free online calculators for finance, health, math, and everyday tasks. Simple, accurate, and fast tools to help you manage your daily calculations."
+    },
+
+    "all": {
+      "title": "All Calculators — SmartTools",
+      "description": "Explore all SmartTools online calculators: finance, health, math, and other useful tools for everyday use."
+    },
+
+    "faq": {
+      "title": "FAQ — Frequently Asked Questions | SmartTools",
+      "description": "Frequently asked questions about SmartTools: how the calculators work, calculation accuracy, and how to use our online tools effectively."
+    },
+
+    "contact": {
+      "title": "Contact — SmartTools",
+      "description": "Get in touch with the SmartTools team. Leave feedback or suggest a new calculator."
+    },
+
+    "search": {
+      "title": "Search Results  — SmartTools",
+      "description": "Search results for  among SmartTools online calculators. Quickly find the tool you need."
+    },
+    "health": {
+      "title": "Health Calculators",
+      "description": "Health tools for BMI, calories, nutrition and fitness tracking."
+    },
+    "math": {
+      "title": "Math Calculators",
+      "description": "Simple and advanced math calculators for everyday use."
+    },
+    "finance": {
+      "title": "Finance Calculators",
+      "description": "Financial tools for loans, ROI, profit and budgeting."
+    },
+    "general": {
+      "title": "General Calculators",
+      "description": "Useful everyday calculators for dates, time, age and more."
+    }
   },
 
-  "toggleTheme": "Змінити тему",
+  "toggleTheme": "Toggle Theme",
+
+  "breadcrumb": {
+    "search": "Search",
+    "home": "Home",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "calculators": "Calculators",
+    "health": "Health",
+    "math": "Math",
+    "finance": "Finance",
+    "general": "General",
+    "bmi": "BMI",
+    "bmr": "BMR",
+    "loan": "Loan",
+    "savings": "Savings",
+    "percentage": "Percentage",
+    "age": "Age",
+    "discount": "Discount",
+    "roi": "ROI",
+    "profit": "Profit",
+    "calorie": "Calorie",
+    "date-difference": "Date Difference",
+    "time-duration": "Time Duration",
+    "basic": "Basic",
+    "scientific": "Scientific"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "button": "SEARCH",
+    "results": "SEARCH RESULTS ",
+    "allResults": "View All → ",
+    "noResult": "No results",
+    "noResults": "No results found for your query."
+  },
+  "header": {
+    "about": "About",
+    "all": "All Calculators",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "home": {
+    "heroTitle": "Smart Online Calculators & Tools ",
+    "heroDescription": "Free calculators for finance, health, math, and business. Simple toolsthat save your time.",
+    "categoriesTitle": "Categories",
+    "categoriesCalculators": "Calculators",
+    "popularTitle": "Popular Tools",
+    "allCalculators": "All Calculators",
+    "buttonLink": "View All"
+  },
+  "category": {
+    "math": "Math",
+    "finance": "Finance",
+    "health": "Health",
+    "general": "General"
+  },
+  "calculators": {
+    "calculators": "calculators",
+    "how": "How to use",
+    "formula": "Formula",
+    "related": "Related calculators",
+    "notCalc": "Calculator component not found",
+    "notFound": "Calculator not found",
+    "bmi": {
+      "title": "BMI Calculator",
+      "description": "Calculate your body mass index.",
+      "weight": "Weight",
+      "height": "Height",
+      "calculate": "Calculate"
+    },
+    "percentage": {
+      "title": "Percentage Calculator",
+      "description": "Calculate percentages easily.",
+      "valueLabel": "Value",
+      "valuePlaceholder": "Enter a number",
+      "percentLabel": "Percentage (%)",
+      "percentPlaceholder": "Enter percentage",
+      "calculate": "Calculate",
+      "result": "Result"
+    },
+    "loan": {
+      "title": "Loan Calculator",
+      "description": "Calculate monthly payments easily.",
+      "principal": "Loan Amount",
+      "rate": "Annual Interest (%)",
+      "months": "Months",
+      "calculate": "Calculate",
+      "result": "Monthly Payment"
+    },
+    "age": {
+      "title": "Age Calculator",
+      "description": "Calculate your age based on birth date.",
+      "birthDate": "Birth date",
+      "calculate": "Calculate",
+      "result": "You are",
+      "resultYears": "y",
+      "resultMonths": "m",
+      "resultDays": "d."
+    },
+    "discount": {
+      "title": "Discount Calculator",
+      "description": "Calculate discounts quickly.",
+      "price": "Original Price",
+      "discount": "Discount (%)",
+      "calculate": "Calculate",
+      "result": "Final Price"
+    },
+    "roi": {
+      "title": "ROI Calculator",
+      "description": "Calculate return on investment.",
+      "gain": "Gain from Investment",
+      "cost": "Cost of Investment",
+      "calculate": "Calculate",
+      "result": "ROI"
+    },
+    "profit": {
+      "title": "Profit Calculator",
+      "description": "Calculate your profit margin.",
+      "revenue": "Revenue",
+      "cost": "Cost",
+      "calculate": "Calculate",
+      "result": "Profit"
+    },
+    "calories": {
+      "title": "Calorie Calculator",
+      "description": "Calculate daily calorie needs.",
+      "weight": "Weight (kg)",
+      "height": "Height (cm)",
+      "age": "Age (years)",
+      "male": "Male",
+      "female": "Female",
+      "activitySedentary": "Sedentary",
+      "activityLight": "Lightly Active",
+      "activityModerate": "Moderately Active",
+      "activityVery": "Very Active",
+      "activityExtra": "Extra Active",
+      "calculate": "Calculate",
+      "result": "Daily Calories",
+      "lose": "Lose Weight",
+      "maintain": "Maintain Weight",
+      "gain": "Gain Weight"
+    },
+    "dateDiff": {
+      "title": "Date Difference Calculator",
+      "description": "Find difference between two dates.",
+      "calculate": "Calculate",
+      "result": "Difference",
+      "days": "days"
+    },
+
+    "timeDuration": {
+      "title": "Time Duration Calculator",
+      "description": "Calculate duration between two times.",
+      "calculate": "Calculate",
+      "result": "Duration",
+      "hours": "h",
+      "minutes": "m"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our calculators and tools.",
+    "buttonLink": "View All FAQs"
+  },
+  "about": {
+    "heroTitle": "About SmartTools",
+    "heroDescription": "SmartTools is a collection of modern online calculators designed to help people solve everyday problems quickly and easily.",
+
+    "missionTitle": "Our Mission",
+    "missionText1": "Our goal is simple — to create easy-to-use tools that save your time. Instead of complex formulas or spreadsheets, you can use our calculators to get instant results.",
+    "missionText2": "SmartTools provides calculators for finance, mathematics, health, productivity and many other everyday tasks.",
+
+    "whyTitle": "Why SmartTools?",
+    "features": {
+      "fast": "⚡ Fast and easy to use",
+      "responsive": "📱 Fully responsive for mobile devices",
+      "accurate": "🧮 Accurate calculations",
+      "free": "🆓 Completely free tools"
+    },
+
+    "visionTitle": "Our Vision",
+    "visionText": "We believe that useful tools should be accessible to everyone. Our platform will continue to grow with new calculators and smart tools designed to simplify everyday calculations."
+  },
+  "contact": {
+    "heroTitle": "Contact Us",
+    "heroDescription": "Have a suggestion for a new calculator or found a bug? We'd love to hear from you.",
+
+    "infoTitle": "Get in touch",
+    "infoText": "If you have ideas for new tools, feedback, or partnership proposals, feel free to contact us.",
+
+    "emailLabel": "Email",
+
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+
+      "emailLabel": "Email",
+      "emailPlaceholder": "Your email",
+
+      "messageLabel": "Message",
+      "messagePlaceholder": "Your message",
+
+      "submit": "Send Message"
+    }
+  },
   "footer": {
-    "rights": "Всі права захищено"
+    "brandDescription": "A collection of modern calculators for everyday tasks — finance, math, health and more.",
+    "calculators": "Calculators",
+    "percentage": "Percentage",
+    "age": "Age",
+    "bmi": "BMI",
+    "profit": "Profit",
+    "categories": "Categories",
+    "math": "Math",
+    "finance": "Finance",
+    "health": "Health",
+    "general": "General",
+    "company": "Company",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "policy": "Policy",
+    "copyright": "All rights reserved"
   },
-  "back": "Назад",
-  "not_found": "Не знайдено",
 
-  "page": {
-    "title": "Топ 5  2025",
-    "next": "Читати далі"
+  "policy": {
+    "title-1": "Privacy Policy",
+    "title-2": "Collection and Use of Information",
+    "title-3": "Disclosure to Third Parties",
+    "title-4": "Data Protection",
+    "title-5": "Changes to the Privacy Policy",
+    "title-6": "Contact Information",
+    "text-1": "This Privacy Policy applies to your visit to our website https://smartools.info/. We do not collect, use, or disclose any personal information about you during your time on our site.",
+    "text-2": "We do not collect any personal information about you.",
+    "text-3": "Since we do not collect personal information about you, we do not disclose it to third parties.",
+    "text-4": "Although we do not collect personal information about you, we still apply security measures to protect your privacy while using our website.",
+    "text-5": "This privacy policy was last updated on 01.06.2026. We may periodically update this privacy policy, and the new edition of the Privacy Policy becomes effective upon its posting on the Internet at the address specified in this section, unless otherwise provided by the new edition of the Privacy Policy. The current version of the Privacy Policy is always available at the address https://smartools.info/. If there are any changes to the Privacy Policy with which the User disagrees, they must cease using the Site. The continued use of the Site constitutes acceptance and acknowledgment by the User of the respective edition of the Privacy Policy.",
+    "text-6": "If you have any questions or concerns regarding this Policy, please contact us at https://smartools.info/. This Privacy Policy is developed in accordance with the requirements of Ukrainian legislation on the protection of personal data and other relevant regulatory legal acts.",
+    "button": "CONFIRM"
   }
-
 }

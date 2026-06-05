@@ -1,28 +1,313 @@
 {
   "seo": {
-    "title": "ТОП-5 ",
-    "description": "Порівняння, характеристики "
-  },
-  "og": {
-    "title": "ТОП-5 ",
-    "description": ""
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "ТОП-5 ",
-    "description": "Огляд найкращих  "
+    "title": "SmartTools — Calculadoras y herramientas en línea",
+    "description": "Calculadoras онлайн gratuitas para finanzas, salud, matemáticas y negocios. Herramientas rápidas, precisas y fáciles de usar.",
+
+    "about": {
+      "title": "Acerca de SmartTools — Calculadoras y herramientas en línea",
+      "description": "SmartTools es una plataforma con calculadoras онлайн gratuitas para finanzas, salud, matemáticas y tareas diarias. Simplicidad, precisión y rapidez."
+    },
+
+    "all": {
+      "title": "Todas las calculadoras — SmartTools",
+      "description": "Explora todas las calculadoras онлайн de SmartTools: finanzas, salud, matemáticas y otras herramientas útiles para el uso diario."
+    },
+
+    "faq": {
+      "title": "FAQ — Preguntas y respuestas | SmartTools",
+      "description": "Preguntas frecuentes sobre SmartTools: cómo funcionan las calculadoras, precisión de los cálculos y uso de herramientas онлайн."
+    },
+
+    "contact": {
+      "title": "Contacto — SmartTools",
+      "description": "Ponte en contacto con el equipo de SmartTools. Deja tus comentarios o sugiere una nueva calculadora."
+    },
+
+    "search": {
+      "title": "Búsqueda — SmartTools",
+      "description": "Resultados de búsqueda entre las calculadoras онлайн de SmartTools. Encuentra rápidamente la herramienta que necesitas."
+    },
+
+    "health": {
+      "title": "Calculadoras de salud",
+      "description": "Herramientas para calcular IMC, calorías, nutrición y seguimiento de actividad física."
+    },
+
+    "math": {
+      "title": "Calculadoras matemáticas",
+      "description": "Calculadoras matemáticas simples y avanzadas para uso diario."
+    },
+
+    "finance": {
+      "title": "Calculadoras financieras",
+      "description": "Herramientas financieras para préstamos, ROI, ganancias y presupuestos."
+    },
+
+    "general": {
+      "title": "Calculadoras generales",
+      "description": "Calculadoras útiles para fechas, tiempo, edad y otras tareas diarias."
+    }
   },
 
-  "toggleTheme": "Змінити тему",
+  "toggleTheme": "Cambiar tema",
+
+  "breadcrumb": {
+    "search": "Búsqueda",
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "calculators": "Calculadoras",
+    "health": "Salud",
+    "math": "Matemáticas",
+    "finance": "Finanzas",
+    "general": "General",
+    "bmi": "IMC",
+    "bmr": "TMB",
+    "loan": "Préstamo",
+    "savings": "Ahorros",
+    "percentage": "Porcentaje",
+    "age": "Edad",
+    "discount": "Descuento",
+    "roi": "ROI",
+    "profit": "Ganancia",
+    "calorie": "Calorías",
+    "date-difference": "Diferencia de fechas",
+    "time-duration": "Duración del tiempo",
+    "basic": "Básico",
+    "scientific": "Científico"
+  },
+
+  "search": {
+    "placeholder": "Buscar...",
+    "button": "BUSCAR",
+    "results": "RESULTADOS DE BÚSQUEDA",
+    "allResults": "Ver todos →",
+    "noResult": "No encontrado",
+    "noResults": "No se encontraron resultados para tu búsqueda."
+  },
+
+  "header": {
+    "about": "Sobre nosotros",
+    "all": "Todas las calculadoras",
+    "faq": "FAQ",
+    "contact": "Contacto"
+  },
+
+  "home": {
+    "heroTitle": "Calculadoras y herramientas inteligentes en línea",
+    "heroDescription": "Calculadoras gratuitas para finanzas, salud, matemáticas y negocios. Herramientas simples que ahorran tu tiempo.",
+    "categoriesTitle": "Categorías",
+    "categoriesCalculators": "Calculadoras",
+    "popularTitle": "Herramientas populares",
+    "allCalculators": "Todas las calculadoras",
+    "buttonLink": "Ver todas"
+  },
+
+  "category": {
+    "math": "Matemáticas",
+    "finance": "Finanzas",
+    "health": "Salud",
+    "general": "General"
+  },
+
+  "calculators": {
+    "calculators": "Calculadoras",
+    "how": "Cómo usar",
+    "formula": "Fórmula",
+    "related": "Calculadoras relacionadas",
+    "notCalc": "Componente de calculadora no encontrado",
+    "notFound": "Calculadora no encontrada",
+
+    "bmi": {
+      "title": "Calculadora de IMC",
+      "description": "Calcula tu índice de masa corporal.",
+      "weight": "Peso",
+      "height": "Altura",
+      "calculate": "Calcular"
+    },
+
+    "percentage": {
+      "title": "Calculadora de porcentajes",
+      "description": "Calcula porcentajes fácilmente.",
+      "valueLabel": "Valor",
+      "valuePlaceholder": "Introduce un número",
+      "percentLabel": "Porcentaje (%)",
+      "percentPlaceholder": "Introduce el porcentaje",
+      "calculate": "Calcular",
+      "result": "Resultado"
+    },
+
+    "loan": {
+      "title": "Calculadora de préstamos",
+      "description": "Calcula fácilmente el pago mensual.",
+      "principal": "Monto del préstamo",
+      "rate": "Tasa anual (%)",
+      "months": "Cantidad de meses",
+      "calculate": "Calcular",
+      "result": "Pago mensual"
+    },
+
+    "age": {
+      "title": "Calculadora de edad",
+      "description": "Calcula tu edad según tu fecha de nacimiento.",
+      "birthDate": "Fecha de nacimiento",
+      "calculate": "Calcular",
+      "result": "Tienes",
+      "resultYears": "a",
+      "resultMonths": "m",
+      "resultDays": "d."
+    },
+
+    "discount": {
+      "title": "Calculadora de descuentos",
+      "description": "Calcula rápidamente un descuento.",
+      "price": "Precio inicial",
+      "discount": "Descuento (%)",
+      "calculate": "Calcular",
+      "result": "Precio final"
+    },
+
+    "roi": {
+      "title": "Calculadora ROI",
+      "description": "Calcula el retorno de inversión.",
+      "gain": "Ganancia de la inversión",
+      "cost": "Costo de la inversión",
+      "calculate": "Calcular",
+      "result": "ROI"
+    },
+
+    "profit": {
+      "title": "Calculadora de ganancias",
+      "description": "Calcula tu margen de ganancia.",
+      "revenue": "Ingresos",
+      "cost": "Costos",
+      "calculate": "Calcular",
+      "result": "Ganancia"
+    },
+
+    "calories": {
+      "title": "Calculadora de calorías",
+      "description": "Calcula tus necesidades diarias de calorías.",
+      "weight": "Peso (kg)",
+      "height": "Altura (cm)",
+      "age": "Edad (años)",
+      "male": "Hombre",
+      "female": "Mujer",
+      "activitySedentary": "Sedentario",
+      "activityLight": "Actividad ligera",
+      "activityModerate": "Actividad moderada",
+      "activityVery": "Alta actividad",
+      "activityExtra": "Actividad muy alta",
+      "calculate": "Calcular",
+      "result": "Necesidad diaria de calorías",
+      "lose": "Perder peso",
+      "maintain": "Mantener",
+      "gain": "Ganar peso"
+    },
+
+    "dateDiff": {
+      "title": "Calculadora de diferencia de fechas",
+      "description": "Encuentra la diferencia entre dos fechas.",
+      "calculate": "Calcular",
+      "result": "Diferencia",
+      "days": "días"
+    },
+
+    "timeDuration": {
+      "title": "Calculadora de duración del tiempo",
+      "description": "Calcula la duración entre dos horas.",
+      "calculate": "Calcular",
+      "result": "Duración",
+      "hours": "h",
+      "minutes": "min"
+    }
+  },
+
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "description": "Encuentra respuestas a las preguntas más comunes sobre nuestras calculadoras y herramientas.",
+    "buttonLink": "Ver todas las preguntas"
+  },
+
+  "about": {
+    "heroTitle": "Acerca de SmartTools",
+    "heroDescription": "SmartTools es una colección de calculadoras modernas en línea creadas para ayudar a las personas a resolver tareas diarias de manera rápida y sencilla.",
+
+    "missionTitle": "Nuestra misión",
+    "missionText1": "Nuestro objetivo es simple: crear herramientas prácticas que ahorren tu tiempo. En lugar de fórmulas complejas o tablas, puedes usar nuestras calculadoras y obtener resultados instantáneos.",
+    "missionText2": "SmartTools ofrece calculadoras para finanzas, matemáticas, salud, productividad y muchas otras tareas cotidianas.",
+
+    "whyTitle": "¿Por qué SmartTools?",
+    "features": {
+      "fast": "⚡ Rápido y fácil de usar",
+      "responsive": "📱 Totalmente adaptable para dispositivos móviles",
+      "accurate": "🧮 Cálculos precisos",
+      "free": "🆓 Completamente gratis"
+    },
+
+    "visionTitle": "Nuestra visión",
+    "visionText": "Creemos que las herramientas útiles deben estar disponibles para todos. Nuestra plataforma seguirá creciendo con nuevas calculadoras y herramientas inteligentes para simplificar los cálculos diarios."
+  },
+
+  "contact": {
+    "heroTitle": "Contáctanos",
+    "heroDescription": "¿Tienes una idea para una nueva calculadora o encontraste un error? Nos gustaría conocer tu opinión.",
+
+    "infoTitle": "Contacto",
+    "infoText": "Si tienes ideas para nuevas herramientas, comentarios o propuestas de colaboración, contáctanos.",
+
+    "emailLabel": "Correo electrónico",
+
+    "form": {
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "Tu email",
+
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Tu mensaje",
+
+      "submit": "Enviar"
+    }
+  },
+
   "footer": {
-    "rights": "Всі права захищено"
+    "brandDescription": "Colección de calculadoras modernas para tareas diarias: finanzas, matemáticas, salud y más.",
+    "calculators": "Calculadoras",
+    "percentage": "Porcentajes",
+    "age": "Edad",
+    "bmi": "IMC",
+    "profit": "Ganancia",
+    "categories": "Categorías",
+    "math": "Matemáticas",
+    "finance": "Finanzas",
+    "health": "Salud",
+    "general": "General",
+    "company": "Empresa",
+    "about": "Sobre nosotros",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "policy": "Política",
+    "copyright": "Todos los derechos reservados"
   },
-  "back": "Назад",
-  "not_found": "Не знайдено",
 
-  "page": {
-    "title": "Топ 5  2025",
-    "next": "Читати далі"
+  "policy": {
+    "title-1": "Política de privacidad",
+    "title-2": "Recopilación y uso de información",
+    "title-3": "Divulgación de información a terceros",
+    "title-4": "Protección de datos",
+    "title-5": "Cambios en la política de privacidad",
+    "title-6": "Información de contacto",
+
+    "text-1": "Esta política de privacidad se aplica a tu visita a nuestro sitio web https://smartools.info/. No recopilamos, utilizamos ni divulgamos ninguna información personal durante tu uso de nuestro sitio.",
+    "text-2": "No recopilamos información personal sobre ti.",
+    "text-3": "Como no recopilamos información personal, no la compartimos con terceros.",
+    "text-4": "Aunque no recopilamos información personal, seguimos aplicando medidas de seguridad para proteger tu privacidad durante el uso de nuestro sitio.",
+    "text-5": "Esta política de privacidad fue actualizada el 01.06.2026. Podemos actualizar periódicamente esta política de privacidad. La nueva versión entra en vigor desde el momento de su publicación en Internet en la dirección indicada en este apartado, salvo que la nueva versión disponga lo contrario. La versión actual de la política de privacidad siempre está disponible en https://smartools.info/. Si el usuario no está de acuerdo con los cambios realizados, deberá dejar de utilizar el sitio. El uso continuado del sitio significa la aceptación de la versión actual de la Política de Privacidad.",
+    "text-6": "Si tienes preguntas o comentarios sobre esta política, contáctanos en https://smartools.info/. Esta política de privacidad fue desarrollada de acuerdo con la legislación de Ucrania sobre protección de datos personales y otras normativas aplicables.",
+
+    "button": "CONFIRMO"
   }
-
 }

@@ -1,28 +1,313 @@
 {
   "seo": {
-    "title": "ТОП-5 ",
-    "description": "Порівняння, характеристики "
-  },
-  "og": {
-    "title": "ТОП-5 ",
-    "description": ""
-  },
-  "twitter": {
-    "card": "summary_large_image",
-    "title": "ТОП-5 ",
-    "description": "Огляд найкращих  "
+    "title": "SmartTools — Kalkulatory online i narzędzia",
+    "description": "Darmowe kalkulatory online do finansów, zdrowia, matematyki i biznesu. Szybkie, dokładne i łatwe w użyciu narzędzia.",
+
+    "about": {
+      "title": "O SmartTools — Kalkulatory online i narzędzia",
+      "description": "SmartTools to platforma z darmowymi kalkulatorami online do finansów, zdrowia, matematyki i codziennych zadań. Prostota, dokładność i szybkość."
+    },
+
+    "all": {
+      "title": "Wszystkie kalkulatory — SmartTools",
+      "description": "Przeglądaj wszystkie kalkulatory online SmartTools: finanse, zdrowie, matematyka i inne przydatne narzędzia do codziennego użytku."
+    },
+
+    "faq": {
+      "title": "FAQ — Pytania i odpowiedzi | SmartTools",
+      "description": "Najczęściej zadawane pytania o SmartTools: jak działają kalkulatory, dokładność obliczeń i korzystanie z narzędzi online."
+    },
+
+    "contact": {
+      "title": "Kontakt — SmartTools",
+      "description": "Skontaktuj się z zespołem SmartTools. Zostaw opinię lub zaproponuj nowy kalkulator."
+    },
+
+    "search": {
+      "title": "Wyszukiwanie — SmartTools",
+      "description": "Wyniki wyszukiwania wśród kalkulatorów online SmartTools. Znajdź potrzebne narzędzie szybko."
+    },
+
+    "health": {
+      "title": "Kalkulatory zdrowia",
+      "description": "Narzędzia do obliczania BMI, kalorii, odżywiania i śledzenia aktywności fizycznej."
+    },
+
+    "math": {
+      "title": "Kalkulatory matematyczne",
+      "description": "Proste i zaawansowane kalkulatory matematyczne do codziennego użytku."
+    },
+
+    "finance": {
+      "title": "Kalkulatory finansowe",
+      "description": "Narzędzia finansowe do kredytów, ROI, zysków i budżetowania."
+    },
+
+    "general": {
+      "title": "Kalkulatory ogólne",
+      "description": "Przydatne codzienne kalkulatory do dat, czasu, wieku i innych."
+    }
   },
 
-  "toggleTheme": "Змінити тему",
+  "toggleTheme": "Zmień motyw",
+
+  "breadcrumb": {
+    "search": "Wyszukiwanie",
+    "home": "Strona główna",
+    "about": "O nas",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "calculators": "Kalkulatory",
+    "health": "Zdrowie",
+    "math": "Matematyka",
+    "finance": "Finanse",
+    "general": "Ogólne",
+    "bmi": "BMI",
+    "bmr": "BMR",
+    "loan": "Kredyt",
+    "savings": "Oszczędności",
+    "percentage": "Procent",
+    "age": "Wiek",
+    "discount": "Rabat",
+    "roi": "ROI",
+    "profit": "Zysk",
+    "calorie": "Kalorie",
+    "date-difference": "Różnica dat",
+    "time-duration": "Czas trwania",
+    "basic": "Podstawowy",
+    "scientific": "Naukowy"
+  },
+
+  "search": {
+    "placeholder": "Szukaj...",
+    "button": "SZUKAJ",
+    "results": "WYNIKI WYSZUKIWANIA",
+    "allResults": "Zobacz wszystkie →",
+    "noResult": "Nie znaleziono",
+    "noResults": "Nie znaleziono wyników dla Twojego zapytania."
+  },
+
+  "header": {
+    "about": "O nas",
+    "all": "Wszystkie kalkulatory",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+
+  "home": {
+    "heroTitle": "Inteligentne kalkulatory online i narzędzia",
+    "heroDescription": "Darmowe kalkulatory do finansów, zdrowia, matematyki i biznesu. Proste narzędzia, które oszczędzają Twój czas.",
+    "categoriesTitle": "Kategorie",
+    "categoriesCalculators": "Kalkulatory",
+    "popularTitle": "Popularne narzędzia",
+    "allCalculators": "Wszystkie kalkulatory",
+    "buttonLink": "Zobacz wszystkie"
+  },
+
+  "category": {
+    "math": "Matematyka",
+    "finance": "Finanse",
+    "health": "Zdrowie",
+    "general": "Ogólne"
+  },
+
+  "calculators": {
+    "calculators": "Kalkulatory",
+    "how": "Jak używać",
+    "formula": "Wzór",
+    "related": "Podobne kalkulatory",
+    "notCalc": "Nie znaleziono komponentu kalkulatora",
+    "notFound": "Nie znaleziono kalkulatora",
+
+    "bmi": {
+      "title": "Kalkulator BMI",
+      "description": "Oblicz swój wskaźnik masy ciała.",
+      "weight": "Waga",
+      "height": "Wzrost",
+      "calculate": "Oblicz"
+    },
+
+    "percentage": {
+      "title": "Kalkulator procentowy",
+      "description": "Łatwo obliczaj procenty.",
+      "valueLabel": "Wartość",
+      "valuePlaceholder": "Wpisz liczbę",
+      "percentLabel": "Procent (%)",
+      "percentPlaceholder": "Wpisz procent",
+      "calculate": "Oblicz",
+      "result": "Wynik"
+    },
+
+    "loan": {
+      "title": "Kalkulator kredytowy",
+      "description": "Łatwo oblicz miesięczną ratę.",
+      "principal": "Kwota kredytu",
+      "rate": "Roczne oprocentowanie (%)",
+      "months": "Liczba miesięcy",
+      "calculate": "Oblicz",
+      "result": "Miesięczna rata"
+    },
+
+    "age": {
+      "title": "Kalkulator wieku",
+      "description": "Oblicz swój wiek na podstawie daty urodzenia.",
+      "birthDate": "Data urodzenia",
+      "calculate": "Oblicz",
+      "result": "Masz",
+      "resultYears": "l",
+      "resultMonths": "m",
+      "resultDays": "d."
+    },
+
+    "discount": {
+      "title": "Kalkulator rabatu",
+      "description": "Szybko oblicz rabat.",
+      "price": "Cena początkowa",
+      "discount": "Rabat (%)",
+      "calculate": "Oblicz",
+      "result": "Cena końcowa"
+    },
+
+    "roi": {
+      "title": "Kalkulator ROI",
+      "description": "Oblicz zwrot z inwestycji.",
+      "gain": "Zysk z inwestycji",
+      "cost": "Koszt inwestycji",
+      "calculate": "Oblicz",
+      "result": "ROI"
+    },
+
+    "profit": {
+      "title": "Kalkulator zysku",
+      "description": "Oblicz swoją marżę zysku.",
+      "revenue": "Przychód",
+      "cost": "Koszty",
+      "calculate": "Oblicz",
+      "result": "Zysk"
+    },
+
+    "calories": {
+      "title": "Kalkulator kalorii",
+      "description": "Oblicz dzienne zapotrzebowanie kaloryczne.",
+      "weight": "Waga (kg)",
+      "height": "Wzrost (cm)",
+      "age": "Wiek (lata)",
+      "male": "Mężczyzna",
+      "female": "Kobieta",
+      "activitySedentary": "Siedzący tryb życia",
+      "activityLight": "Lekka aktywność",
+      "activityModerate": "Umiarkowana aktywność",
+      "activityVery": "Wysoka aktywność",
+      "activityExtra": "Bardzo wysoka aktywność",
+      "calculate": "Oblicz",
+      "result": "Dzienne zapotrzebowanie kaloryczne",
+      "lose": "Odchudzanie",
+      "maintain": "Utrzymanie",
+      "gain": "Przyrost masy"
+    },
+
+    "dateDiff": {
+      "title": "Kalkulator różnicy dat",
+      "description": "Znajdź różnicę między dwiema datami.",
+      "calculate": "Oblicz",
+      "result": "Różnica",
+      "days": "dni"
+    },
+
+    "timeDuration": {
+      "title": "Kalkulator czasu trwania",
+      "description": "Oblicz czas trwania między dwoma godzinami.",
+      "calculate": "Oblicz",
+      "result": "Czas trwania",
+      "hours": "godz",
+      "minutes": "min"
+    }
+  },
+
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "description": "Znajdź odpowiedzi na najczęściej zadawane pytania dotyczące naszych kalkulatorów i narzędzi.",
+    "buttonLink": "Zobacz wszystkie pytania"
+  },
+
+  "about": {
+    "heroTitle": "O SmartTools",
+    "heroDescription": "SmartTools to kolekcja nowoczesnych kalkulatorów online stworzonych, aby pomagać ludziom szybko i łatwo rozwiązywać codzienne problemy.",
+
+    "missionTitle": "Nasza misja",
+    "missionText1": "Nasz cel jest prosty — tworzyć wygodne narzędzia, które oszczędzają Twój czas. Zamiast skomplikowanych wzorów lub tabel możesz korzystać z naszych kalkulatorów i otrzymywać natychmiastowe wyniki.",
+    "missionText2": "SmartTools oferuje kalkulatory do finansów, matematyki, zdrowia, produktywności i wielu innych codziennych zadań.",
+
+    "whyTitle": "Dlaczego SmartTools?",
+    "features": {
+      "fast": "⚡ Szybkie i łatwe w użyciu",
+      "responsive": "📱 W pełni responsywne dla urządzeń mobilnych",
+      "accurate": "🧮 Dokładne obliczenia",
+      "free": "🆓 Całkowicie darmowe"
+    },
+
+    "visionTitle": "Nasza wizja",
+    "visionText": "Wierzymy, że przydatne narzędzia powinny być dostępne dla każdego. Nasza platforma będzie stale rozwijana poprzez dodawanie nowych kalkulatorów i inteligentnych narzędzi upraszczających codzienne obliczenia."
+  },
+
+  "contact": {
+    "heroTitle": "Skontaktuj się z nami",
+    "heroDescription": "Masz pomysł na nowy kalkulator lub znalazłeś błąd? Chętnie poznamy Twoją opinię.",
+
+    "infoTitle": "Kontakt",
+    "infoText": "Jeśli masz pomysły na nowe narzędzia, opinie lub propozycje współpracy — skontaktuj się z nami.",
+
+    "emailLabel": "Adres e-mail",
+
+    "form": {
+      "nameLabel": "Imię",
+      "namePlaceholder": "Twoje imię",
+
+      "emailLabel": "Adres e-mail",
+      "emailPlaceholder": "Twój email",
+
+      "messageLabel": "Wiadomość",
+      "messagePlaceholder": "Twoja wiadomość",
+
+      "submit": "Wyślij"
+    }
+  },
+
   "footer": {
-    "rights": "Всі права захищено"
+    "brandDescription": "Kolekcja nowoczesnych kalkulatorów do codziennych zadań — finanse, matematyka, zdrowie i inne.",
+    "calculators": "Kalkulatory",
+    "percentage": "Procenty",
+    "age": "Wiek",
+    "bmi": "BMI",
+    "profit": "Zysk",
+    "categories": "Kategorie",
+    "math": "Matematyka",
+    "finance": "Finanse",
+    "health": "Zdrowie",
+    "general": "Ogólne",
+    "company": "Firma",
+    "about": "O nas",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "policy": "Polityka",
+    "copyright": "Wszelkie prawa zastrzeżone"
   },
-  "back": "Назад",
-  "not_found": "Не знайдено",
 
-  "page": {
-    "title": "Топ 5  2025",
-    "next": "Читати далі"
+  "policy": {
+    "title-1": "Polityka prywatności",
+    "title-2": "Gromadzenie i wykorzystanie informacji",
+    "title-3": "Udostępnianie informacji stronom trzecim",
+    "title-4": "Ochrona danych",
+    "title-5": "Zmiany w polityce prywatności",
+    "title-6": "Informacje kontaktowe",
+
+    "text-1": "Niniejsza polityka prywatności dotyczy Twojej wizyty na naszej stronie internetowej https://smartools.info/. Nie zbieramy, nie wykorzystujemy ani nie ujawniamy żadnych danych osobowych podczas korzystania z naszej strony.",
+    "text-2": "Nie zbieramy Twoich danych osobowych.",
+    "text-3": "Ponieważ nie zbieramy danych osobowych, nie udostępniamy ich stronom trzecim.",
+    "text-4": "Chociaż nie zbieramy danych osobowych, nadal stosujemy środki bezpieczeństwa w celu ochrony Twojej prywatności podczas korzystania z naszej strony.",
+    "text-5": "Niniejsza polityka prywatności została zaktualizowana 01.06.2026. Możemy okresowo aktualizować tę politykę prywatności. Nowa wersja polityki prywatności obowiązuje od momentu jej opublikowania w Internecie pod adresem wskazanym w tym punkcie, chyba że nowa wersja stanowi inaczej. Aktualna wersja polityki prywatności jest zawsze dostępna pod adresem https://smartools.info/. Jeśli użytkownik nie zgadza się ze zmianami w polityce prywatności, zobowiązany jest zaprzestać korzystania ze strony. Dalsze korzystanie ze strony oznacza akceptację aktualnej wersji Polityki Prywatności.",
+    "text-6": "Jeśli masz pytania lub uwagi dotyczące tej polityki, skontaktuj się z nami pod adresem https://smartools.info/. Niniejsza polityka prywatności została opracowana zgodnie z wymogami prawa Ukrainy dotyczącymi ochrony danych osobowych oraz innymi odpowiednimi aktami prawnymi.",
+
+    "button": "POTWIERDZAM"
   }
-
 }
