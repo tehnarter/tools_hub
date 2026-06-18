@@ -1,4 +1,5 @@
-// @use "@/assets/styles/utils" as *; // для міксинів/функцій
+// @use "./utils" as *; // для міксинів/функцій
+
 @use "./normalize" as *;
 @use "./fonts" as *;
 @use "./css-variables" as *;

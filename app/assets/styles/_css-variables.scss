@@ -1,5 +1,5 @@
 // viewport
-@use "./utils/mixins" as *;
+@use "./utils" as *;
 
 :root {
   --viewport: 1440; // ширина макета в px
