@@ -1,23 +1,39 @@
-// 📐 Функція: перетворення px у vw
-@function to-vw($size) {
-  @return calc(#{$size} / var(--viewport) * 100vw);
-}
+// @use "sass:math";
 
 // 📐 Функція: перетворення px у rem
-@function to-rem($px) {
+
+@function px-rem($px) {
   @return calc(#{$px} / var(--base-font-size) * 1rem);
 }
 
-// 📐 Функція: clamp з ремами та vw
-@function adap-font($min, $vwValue, $max) {
-  // повертає CSS clamp(minimum, preferred, maximum)
+// 📐 Функція: px → vw
+// $px — пікселі, які хочемо перетворити
+// $viewport — ширина "базового" екрану (px)
 
-  @return clamp(to-rem($min), to-vw($vwValue), to-rem($max));
+@function px-vw($px, $viewport: 1440) {
+  @return calc(#{$px} / #{$viewport} * 100vw);
 }
-//мінімум у rem,  бажане значення в vw #{$vwValue}vw,  максимум у rem
 
-@function adap($min, $vwValue, $max) {
-  // повертає CSS clamp(minimum, preferred, maximum)
+// 📐 Функція: rem → vw
+// $rem — реми, які хочемо перетворити
+// $viewport — ширина "базового" екрану (px)
 
-  @return clamp(to-rem($min), #{$vwValue}vw, to-rem($max));
+@function rem-vw($rem, $viewport: 1440) {
+  @return calc(#{$rem} * var(--base-font-size) / #{$viewport} * 100vw);
+}
+
+// 📐 Функція:  адаптив шрифту для параграфів для мобільних екранів коли потрібно щоб на екранах менше 1023 шрифт був 18 px, а на більших 16 то ставимо (16, 16, 18)
+//мінімум у px $min,  бажане значення в пікселях $px, яке перeтвориться у vw  ,  максимум у px $max (px -перeтворються в rem)
+
+@function px-fs($min, $px, $max) {
+  $vw: calc(#{$px} / var(--viewport) * 100vw);
+  @return clamp(px-rem($min), #{$vw}, px-rem($max));
+}
+
+// 📐 Функція:  адаптив шрифту для параграфів для мобільних екранів коли потрібно щоб на екранах менше 1023 шрифт був 18 px, а на більших 1 то ставимо (1, 1, 1.15)
+//мінімум у rem $min,  бажане значення в ремах $rem, яке перeтвориться у vw  ,  максимум у rem $max
+
+@function rem-fs($min, $rem, $max) {
+  $vw: calc(#{$rem} * var(--base-font-size) / var(--viewport) * 100vw);
+  @return clamp(#{$min}rem, #{$vw}, #{$max}rem);
 }
